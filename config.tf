@@ -75,7 +75,7 @@ resource "google_compute_instance" "prod-env" {
   }
 }
 
-# Show IP's instances
+# Show IP instances
 output "build-ip" {
   value = google_compute_instance.build-env.network_interface[0].access_config[0].nat_ip
 }
